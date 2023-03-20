@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisa</title>
+    <style>
+        
+/* .f-container{ */
+    /* display: flex; */
+     /* flex-direction: row;  */
+    /* height: 20vh; */
+    /* border: 2px solid rgb(237, 241, 237); */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space;
+    justify-content: flex-end; */
+    /* text-align: center; */
+    /* color: rgb(153, 139, 122); */
+    /* font-size: 50px; */
+    /*  */
+/*  */
+/*  */
+/* } */
+/* .f-item{ */
+    /* background-color: rgb(103, 77, 128); */
+    /* border: 2px solid beige; */
+    /* margin: 2px; */
+    /* height: 110px; */
+    /* width: 200px; */
+    /* flex-direction: row-reverse; */
+/* } */
+/* a:hover{ */
+    /* background-attachment: fixed; */
+/* } */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    display: flex;
+}
+
+    
+
+.card{
+    height: 350px;
+    box-shadow: 3px 3px 9px black;
+    margin: 10px;
+    overflow: hidden;
+} 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(208, 156, 93);
+}
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 1px;
+    transition: 10s;
+}
+.des{ 
+     height: 100px;
+    width: 200px;    
+      padding: 2px;
+     box-sizing: border-box; 
+     position: absolute; 
+      bottom: 200px; 
+     background:rgb(189, 177, 105);
+     color: white;
+     transition: 10s;
+}
+h1{
+    margin: 3px;
+    font-size: 19px;
+     /* visibility: hidden;  */
+}
+p{
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden; 
+    opacity: 0; 
+}
+span{
+    font-weight: bold;
+    color: rgb(92, 136, 136);
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .des{
+    height: 100px;
+    bottom: 100px;
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1)rotate(-6deg);
+}
+    </style>
+</head>
+<body>
+      <!-- <p>Why RASA</p> -->
+    
+      <div class="container">
+        <div class="card">
+        <img src="images/pokhara.jpg" alt="ok">
+        <div class="des">
+        <h1>Group tour</h1>
+ <p>want <span>group tour</span> 
+     ?>phokhara lakeside
+ >Bhedetar
+ >Terathum</p>
+ </div>
+ </div>
+ <div class="card">
+ <img src="images/pokhara.jpg" alt="ok">
+ <div class="des">
+ <h1>Tour by interest</h1>
+ <p>your <span>interest</span> Aurveda,spa,yoga
+ <p> Beaches and backwater</p>
+ <p> City tour</p>
+ </p>
+ </div>
+ </div>
+</body>
+</html>
